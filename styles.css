@@ -1,0 +1,332 @@
+@import url('https://fonts.googleapis.com/css2?family=Kdam+Thmor+Pro&display=swap');/**(importa uma fonte )**/
+
+*{  /**( O * é usado para adicionar um padrão a todo o arquivo)**/
+   margin: 0;  /**(Define a margem , por estar em um '*' define para todo o arquivo)**/
+   padding: 0; /**(Define uma   distância entre o conteúdo de um elemento e suas bordas  )**/
+   background-color: black; /**(Define uma cor de background para todo o arquivo )**/
+   list-style: none; /**(Define a propriedade da lista toda de uma vez +- isso)**/
+   text-decoration: none; /**(Define a aparência dos textos )**/
+}
+
+
+header{ /**(É o cabeçalho, pode ser usado para integrar logos, elementos de titúlos, formúlarios, etc...)**/
+    height: 120px;    /**(Define a altura de um elemento )**/
+    display: flex;    /**(Define os tipos de exibição )**/
+    justify-content: space-around; /**(Distribui espaço de formas diferentes entre os itens )**/
+    align-items: center; /**(Controla o alinhamento dos itens no eixo do bloco )**/
+    border-bottom: inset;
+    border-color:rgb(162, 19, 19);
+    border-width: 10px;
+
+}
+
+nav{/**( fornece lins por meio de uma seleção )**/
+    width: 60%;/**(Define a largura do item )**/
+    display: block;
+}
+
+ul{ /**(representa uma lista nao ordenada de itens  )**/
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+
+}
+
+li{/**(Representa uma lista ordenada de itens )**/
+    list-style: none;/**( lista as propriedades da lista )**/
+    color: aliceblue;/**(Escolhe a cor )**/
+    cursor: pointer;/**(seleciona o tipo de cursor)**/
+    font-size: 25px;/**(Escolhe o tamanho da fonte )**/
+    transition: 3s;/**( define a transição )**/
+    font-family: 'Kdam Thmor Pro', sans-serif ;/**(Define a fonte )**/
+
+}
+
+li:hover{/**(Representa uma lista ordenada de itens//// quando como o hover, faz com que apoliqe um estilo ao link quando o mouse passa por cima dele)**/
+    color: rgb(162, 19, 19);
+}
+
+#logo{/**()**/
+    width: 80px;
+    height: auto;
+}
+
+#banner{
+    background-image: url("Midia/banner02.png");
+    background-position: 50% 50%;
+    background-size: cover;
+    display:flex;
+    justify-content: center;
+    padding: 0px;
+    margin-bottom: 10px;
+    width: auto;
+    height: 799px;
+    border-bottom:rgb(162, 19, 19);/**(Borda de baixo)**/
+    border-bottom-style: inset ;/**(Estilo da borda de baixo)**/
+    border-width: 10px;/**(Largura da borda)**/
+}
+#seetrailer{
+    width: 50%;
+    display: flex;
+    justify-content:space-between;   
+    margin-left: 350px;
+    padding: 50px; 
+}
+.trailertext{
+    color: white;
+    font-size: 25px;
+    font-family: 'Kdam Thmor Pro', sans-serif;
+    width: 70%;
+}
+
+#trailer-container{
+    width: 100%;
+    height: 400px;
+    display: flex;
+    justify-content: center;
+    border-radius: 15px;/**(arredonda as bordas)**/
+
+}   
+
+.content{
+    width: 60%;
+    display:flex;
+    align-items: center;
+    justify-content: space-between; 
+    
+}
+
+.trailer{
+    width: 50%;
+    border-style: inset;
+    border-color: rgb(162, 19, 19); 
+    border-width: 10px;
+}
+
+#sinopse{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;   
+    margin-left: 30px;
+    padding: 20px 10px 20px 20px;
+    border-radius: 15px;
+    border-width: 5px;
+    border-style: dashed;
+    border-color: rgb(162, 19, 19);
+}
+
+.description{
+    color: white;
+    font-size: 19px;
+    font-family: 'Kdam Thmor Pro', sans-serif;
+    width: 95%;
+}
+
+.button{
+    width: 200px;
+    height: 60px;
+    background-color: rgb(162, 19, 19);
+    color: #fff;
+    padding: 8px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: .8s;
+    font-size: 18px ;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    border: none;
+    outline: none;
+    margin-top: 25px;
+
+}
+
+.button:hover {
+    background-color: #fff;
+    color: #000;
+
+}
+
+.actor-cards-container{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-top: 100px;
+}
+
+.cards-container{
+    width: 90%;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);/**(Define a quantidade de colunas e o tipo dela)**/
+    row-gap: 20px;
+    column-gap: 40px;
+}
+
+.card {
+    margin-top: 40px;
+    width: 100%;
+    height: 920px;
+    background-size: cover;
+    background-position: 50% 10%;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 1s;
+    display: flex;
+    flex-direction: column;
+    justify-content:flex-end;
+    padding: 0 0 20px 10px;
+    color:  white;
+    font-size: 23px ;
+    font-family: 'Kdam Thmor Pro', sans-serif;
+    border-style: inset;
+    border-color: rgb(162, 19, 19); 
+    border-width: 6px;
+}
+.card:hover{
+    transform: scale(1.02);
+}
+
+.banner-1{
+    background-image: url("https://i.pinimg.com/564x/e5/a1/f4/e5a1f46df06224b572fd3ee3451244b4.jpg");
+}
+.banner-2{
+    background-image: url("https://i.pinimg.com/736x/04/f7/8d/04f78d68dedb31c6866862faac4837de.jpg");
+}
+.banner-3{
+    
+    background-image: url("https://i.pinimg.com/564x/e0/67/a2/e067a2f2ec9d808266f135bfb83db95a.jpg");
+}
+
+footer{
+    height: 230px;
+    margin-top: 100px ;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    border-style: inset;
+    border-color: rgb(255, 0, 0); 
+    border-width: 6px 0px 6px 0px;
+}
+
+span{
+    color: #fff;
+    font-family: 'Kdam Thmor Pro', sans-serif;
+    font-size: large;
+
+}
+
+.footer-navegation{
+    display: none;
+
+}
+
+.footer-list{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+/* Estilos específicos para telas menores */
+@media (max-width: 768px) {
+    .footer-navegation {
+        display: block; /* Exibe a navegação no footer em telas menores */
+    }
+    footer{
+        height: 450px;
+    }
+    
+    nav {
+        display: none; /* Garante que o nav não será ocultado em telas menores */
+    }
+    ul{ /**(representa uma lista nao ordenada de itens  )**/
+        margin-top: 30px;
+        
+    }
+    #banner{
+       width: 100%;
+       background-image: url('./Midia/poster.jpeg');
+       background-position: center;
+       display: flex;
+       height: 100%; /* Ajusta a altura automaticamente para manter a proporção da imagem */
+       min-height: 700px; /* Define uma altura mínima para garantir visibilidade */
+    }
+
+    #trailer-container{
+        width: 100%;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .content{
+        width: 95%;
+        display: flex;
+        flex-direction: column;
+
+    }
+
+    #seetrailer{
+        margin-left: 20px;
+        justify-content: left;
+    }
+    .trailertext{
+        width: 95%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
+    .trailer{
+        margin-left: 20px;
+        width: 100%;
+
+    }
+
+    #sinopse{
+        margin-top: 30px;
+        width: 93%;
+        display: flex; /* Altere para 'flex' para garantir flexibilidade */
+        flex-direction: column;
+        justify-content: center;
+        margin-left: auto; /* Remove margem fixa e centraliza automaticamente */
+        margin-right: auto; /* Centraliza automaticamente */
+        padding: 19px; /* Adiciona padding para evitar que o conteúdo encoste nas bordas */
+        border-radius: 15px;
+        border-width: 5px;
+        border-style: dashed;
+        border-color: rgb(162, 19, 19);
+
+    }
+    .description{
+        width: 100%;
+    }
+    .button{
+        width: 200px;
+        margin-top: 30px;
+        margin-left: 25%;
+        justify-content: center;
+    }
+    .actor-cards-container {
+        width: 100%;
+        display: flex;
+        justify-content: center; /* Centraliza o conteúdo horizontalmente */
+        margin-top: 100px;
+    }
+    
+    .cards-container {
+        width: 90%;
+        display: grid;
+        grid-template-columns: 1fr;
+        row-gap: 20px;
+        column-gap: 40px;
+        justify-items: center; /* Centraliza os itens dentro da grid */
+    }
+
+
+   
+}
+ 

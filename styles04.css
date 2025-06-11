@@ -1,0 +1,293 @@
+@import url('https://fonts.googleapis.com/css2?family=Kdam+Thmor+Pro&display=swap');/**(importa uma fonte )**/
+
+*{  /**( O * é usado para adicionar um padrão a todo o arquivo)**/
+   margin: 0;  /**(Define a margem , por estar em um '*' define para todo o arquivo)**/
+   padding: 0; /**(Define uma   distância entre o conteúdo de um elemento e suas bordas  )**/
+   background-color: black; /**(Define uma cor de background para todo o arquivo )**/
+   list-style: none; /**(Define a propriedade da lista toda de uma vez +- isso)**/
+   text-decoration: none; /**(Define a aparência dos textos )**/
+}
+
+
+header{ /**(É o cabeçalho, pode ser usado para integrar logos, elementos de titúlos, formúlarios, etc...)**/
+    height: 120px;    /**(Define a altura de um elemento )**/
+    display: flex;    /**(Define os tipos de exibição )**/
+    justify-content: space-around; /**(Distribui espaço de formas diferentes entre os itens )**/
+    align-items: center; /**(Controla o alinhamento dos itens no eixo do bloco )**/
+    border-bottom: inset;
+    border-color:rgb(162, 19, 19);
+    border-width: 10px;
+
+}
+
+nav{/**( fornece lins por meio de uma seleção )**/
+    width: 60%;/**(Define a largura do item )**/
+    display: block;
+}
+
+ul{ /**(representa uma lista nao ordenada de itens  )**/
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+
+}
+
+li{/**(Representa uma lista ordenada de itens )**/
+    list-style: none;/**( lista as propriedades da lista )**/
+    color: aliceblue;/**(Escolhe a cor )**/
+    cursor: pointer;/**(seleciona o tipo de cursor)**/
+    font-size: 25px;/**(Escolhe o tamanho da fonte )**/
+    transition: 3s;/**( define a transição )**/
+    font-family: 'Kdam Thmor Pro', sans-serif ;/**(Define a fonte )**/
+
+}
+
+li:hover{/**(Representa uma lista ordenada de itens//// quando como o hover, faz com que apoliqe um estilo ao link quando o mouse passa por cima dele)**/
+    color: rgb(162, 19, 19);
+
+}
+
+#logo{/**()**/
+    width: 100px;
+    height: auto;
+
+}
+footer{
+    height: 230px;
+    margin-top: 100px ;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    border-style: inset;
+    border-color: rgb(255, 0, 0); 
+    border-width: 6px 0px 6px 0px;
+}
+
+span{
+    color: #fff;
+    font-family: 'Kdam Thmor Pro', sans-serif;
+    font-size: large;
+
+}
+#banner{
+    background-image: url("Midia/banner02.png");
+    background-position: 50% 50%;
+    background-size: cover;
+    display:flex;
+    justify-content: center;
+    padding: 0px;
+    margin-bottom: 10px;
+    width: auto;
+    height: 799px;
+    border-bottom:rgb(162, 19, 19);/**(Borda de baixo)**/
+    border-bottom-style: inset ;/**(Estilo da borda de baixo)**/
+    border-width: 10px;/**(Largura da borda)**/
+}
+
+.footer-navegation{
+    display: none;
+
+}
+
+.footer-list{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+/* página COMENTÁRIOS */
+
+img {
+    overflow-clip-margin: content-box;
+    overflow: clip;
+    background-size: cover;
+
+}
+
+#card_comentarios_container{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-top: 60px;
+    
+
+    
+}
+
+.comentarios_conteudo{
+    width: 90%;
+    display: grid;
+    grid-template-columns: repeat(3, 5fr);
+    row-gap: 20px;
+    column-gap: 40px;
+    
+}
+
+.comentarios_filho{
+    width: 100%;
+    height: 700px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 1s;
+    display: flex;
+    flex-direction: column;
+    align-items:start;
+    padding: 0px 0px 0px 0px;
+    color: white;
+    border-style: inset;
+    border-color: rgb(162, 19, 19);
+    background-image: url("./Midia/fundocomentario02.png");
+    background-color: transparent;
+    background-size: cover ; /* Ajusta a imagem ao contêiner sem cortar */
+    background-position: center; /* Centraliza a imagem */
+    
+}
+
+.foto_1{
+    background-image: url("https://i.pinimg.com/736x/85/1a/6f/851a6fa47e15f59c0c2c9963ac8b6a43.jpg");
+}
+
+.foto_2{
+    background-image: url("https://i.pinimg.com/564x/e0/2c/97/e02c97372d20a9459d52474d44875109.jpg");
+}
+
+.foto_3{
+    background-image: url("https://i.pinimg.com/736x/69/f1/51/69f151a79378eb077514c7ef606cffec.jpg");
+}
+
+.foto_4{
+    background-image: url("https://i.pinimg.com/474x/c7/a1/9b/c7a19b4c127c43909d2e91d8da950849.jpg");
+}
+
+.foto_5{
+    background-image: url("https://i.pinimg.com/736x/ad/6f/b8/ad6fb8d8af9d06d3a02e67494ca7834e.jpg");
+}
+
+.foto_6{
+    background-image: url("https://i.pinimg.com/564x/50/22/1d/50221d8ecc323f872fdbcfc2f8956ca6.jpg");
+}
+
+.foto_7{
+    background-image: url("https://i.pinimg.com/736x/55/0f/39/550f393815afda01e58d5fdb987508e9.jpg");
+    background-position: 80% 50%;
+}
+
+.foto_8{
+    background-image: url("https://i.pinimg.com/474x/1d/22/55/1d225527749a5fb0d066cc7d69056749.jpg");
+}
+
+.foto_9{
+    background-image: url("https://i.pinimg.com/564x/fe/e6/85/fee68546be2d58480ae82dddb4aca120.jpg");
+}
+
+.foto_10{
+    background-image: url("https://i.pinimg.com/564x/24/ef/d1/24efd1e23deb8379b31975b5392bc9ff.jpg");
+}
+
+.foto_11{
+    background-image: url("https://i.pinimg.com/736x/95/e6/66/95e666c53012d257d91b392d785f0404.jpg");
+}
+
+.foto_12{
+    background-image: url("https://i.pinimg.com/736x/37/c8/88/37c888a174296af02ede602610043ed6.jpg");
+}
+
+.foto_13{
+    background-image: url("https://i.pinimg.com/736x/78/d1/66/78d1660ecf6bb5410cc9b1b4b603f77b.jpg");
+}
+
+.foto_14{
+    background-image: url("https://i.pinimg.com/474x/8c/cf/8a/8ccf8a53d742ba12ce6785463f371950.jpg");
+}
+
+.foto_15{
+    background-image: url("https://i.pinimg.com/736x/ef/f0/2b/eff02b9cb5d341154e59800e75702c21.jpg");
+}
+.foto_16{
+    background-image: url("https://i.pinimg.com/474x/55/c6/0e/55c60e566e40db9b30452930932179e7.jpg");
+}
+.foto_17{
+    background-image: url("https://i.pinimg.com/736x/a8/2a/75/a82a75a8f3520f096d6145809aa4268a.jpg");
+}
+.foto_18{
+    background-image: url("https://i.pinimg.com/564x/e0/f2/f8/e0f2f88f9ddd12a8284218b784e587d9.jpg");
+}
+
+
+.comentarios_conteudo :hover{
+    transform: scale(1.02);
+    
+}
+
+
+.rating{
+    background-color: transparent;
+    width: 60px;
+}
+
+
+
+/* Estilos específicos para telas menores */
+@media (max-width: 768px) {
+    .footer-navegation {
+        display: block; /* Exibe a navegação no footer em telas menores */
+    }
+    footer{
+        height: 450px;
+    }
+    
+    nav {
+        display: none; /* Garante que o nav não será ocultado em telas menores */
+    }
+    ul{ /**(representa uma lista nao ordenada de itens  )**/
+        margin-top: 30px;
+    
+    }
+    #banner{
+        width: 100%;
+        background-image: url('./Midia/poster.jpeg');
+        background-position: center;
+        display: flex;
+        height: 100%; /* Ajusta a altura automaticamente para manter a proporção da imagem */
+        min-height: 700px; /* Define uma altura mínima para garantir visibilidade */
+    }
+
+
+    #card_comentarios_container{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        margin-top: 60px;
+        
+    
+        
+    }
+    
+    .comentarios_conteudo{
+        grid-template-columns: repeat(1, 4fr);
+
+    }
+    
+    .comentarios_filho{
+
+        padding: 0px 0px 0px 0px;
+        background-size: cover ; /* Ajusta a imagem ao contêiner sem cortar */
+        background-position: center; /* Centraliza a imagem */
+        font-size: 17px;
+        
+    }
+    
+    .comentarios_filho p{
+        padding: 10px 20px 10px 20px;
+        background-color: transparent;
+
+    }
+    .foto{
+        width: 100px;
+        height: 100px;
+        
+    }
+    
+
+
+}

@@ -1,0 +1,233 @@
+@import url('https://fonts.googleapis.com/css2?family=Kdam+Thmor+Pro&display=swap');/**(importa uma fonte )**/
+
+*{  /**( O * é usado para adicionar um padrão a todo o arquivo)**/
+   margin: 0;  /**(Define a margem , por estar em um '*' define para todo o arquivo)**/
+   padding: 0; /**(Define uma   distância entre o conteúdo de um elemento e suas bordas  )**/
+   background-color: black; /**(Define uma cor de background para todo o arquivo )**/
+   list-style: none; /**(Define a propriedade da lista toda de uma vez +- isso)**/
+   text-decoration: none; /**(Define a aparência dos textos )**/
+}
+
+
+header{ /**(É o cabeçalho, pode ser usado para integrar logos, elementos de titúlos, formúlarios, etc...)**/
+    height: 120px;    /**(Define a altura de um elemento )**/
+    display: flex;    /**(Define os tipos de exibição )**/
+    justify-content: space-around; /**(Distribui espaço de formas diferentes entre os itens )**/
+    align-items: center; /**(Controla o alinhamento dos itens no eixo do bloco )**/
+    border-bottom: inset;
+    border-color:rgb(162, 19, 19);
+    border-width: 10px;
+
+}
+
+nav{/**( fornece lins por meio de uma seleção )**/
+    width: 60%;/**(Define a largura do item )**/
+    display: block;
+}
+
+ul{ /**(representa uma lista nao ordenada de itens  )**/
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+
+}
+
+li{/**(Representa uma lista ordenada de itens )**/
+    list-style: none;/**( lista as propriedades da lista )**/
+    color: aliceblue;/**(Escolhe a cor )**/
+    cursor: pointer;/**(seleciona o tipo de cursor)**/
+    font-size: 25px;/**(Escolhe o tamanho da fonte )**/
+    transition: 3s;/**( define a transição )**/
+    font-family: 'Kdam Thmor Pro', sans-serif ;/**(Define a fonte )**/
+
+}
+
+li:hover{/**(Representa uma lista ordenada de itens//// quando como o hover, faz com que apoliqe um estilo ao link quando o mouse passa por cima dele)**/
+    color: rgb(162, 19, 19);
+
+}
+
+#logo{/**()**/
+    width: 80px;
+    height: auto;
+
+}
+
+footer{
+    height: 230px;
+    margin-top: 100px ;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    border-style: inset;
+    border-color: rgb(255, 0, 0); 
+    border-width: 6px 0px 6px 0px;
+
+}
+
+span{
+    color: #fff;
+    font-family: 'Kdam Thmor Pro', sans-serif;
+    font-size: large;
+
+}
+
+.footer-navegation{
+    display: none;
+
+}
+
+.footer-list{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+/* página FALE CONOSCO */
+
+#ajuda_banner{
+    background-image: url("Midia/banner02.png");
+    background-position: 50% 50%;
+    background-size: cover;
+    display:flex;
+    justify-content: center;
+    padding: 0px;
+    margin-bottom: 10px;
+    width: auto;
+    height: 799px;
+    border-bottom:rgb(162, 19, 19);/**(Borda de baixo)**/
+    border-bottom-style: inset ;/**(Estilo da borda de baixo)**/
+    border-width: 10px;/**(Largura da borda)**/
+
+}
+#ajuda_pai{ 
+
+    width: 100%;
+    height: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    align-content: center;
+    margin: 60px 0px 30px 0px;
+
+}
+
+.ajuda_filho{
+    font-family: 'Kdam Thmor Pro', sans-serif;
+    font-size: 35px;
+    color: white;
+}
+
+#tipo_ajuda_pai{
+    width: 100%;
+    justify-content: center;
+    display: flex;
+    margin-top: 70px;   
+}
+
+.tipo_ajuda_filho{
+
+    width: 90%;
+    display: grid;
+    grid-template-columns: repeat(4,1fr); /*divide a tela em x colunas */
+    row-gap: 20px;/* distância vertical entre as colunas  */
+    column-gap: 40px;/* distância horizontal entre as colunas */
+}
+
+.ajuda{
+    margin-top: 40px;
+    width: 100%;
+    height: 300px;
+    background-size: cover;
+    background-position: 50% 50%;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 1s;
+    display: flex;
+    flex-direction: column;
+    justify-content:flex-end;
+    align-items: center;
+    padding: 0 0 20px 10px;
+    color: white;
+    font-size: 26px ;
+    font-family: 'Kdam Thmor Pro', sans-serif;
+    border-style: inset;
+    border-color: rgb(162, 19, 19); 
+    border-width: 6px;
+    -webkit-text-stroke: 2px rgb(162,19,19);
+}
+
+.ajuda:hover{
+    transform: scale(1.02);
+}
+.ajuda-1{
+    background-position: 50% 37%;
+    background-image: url("https://i.pinimg.com/736x/bc/7d/d1/bc7dd11b9b44d0ed553225e7be7740c7.jpg");
+}
+.ajuda-2{
+    background-image: url("https://i.pinimg.com/736x/2e/2a/5f/2e2a5ffe709dc5ce26ab5342be36aa00.jpg");
+}
+.ajuda-3{
+    background-image: url("https://i.pinimg.com/736x/78/d8/33/78d8336e4d6565cdc30f4e641f1bc5fc.jpg");
+}
+.ajuda-4{
+    background-image: url("https://i.pinimg.com/736x/43/fa/de/43fade61b4529eb33aa51f54a27e2c7b.jpg");
+}
+
+/* Estilos específicos para telas menores */
+@media (max-width: 768px) {
+    .footer-navegation {
+        display: block; /* Exibe a navegação no footer em telas menores */
+    }
+    footer{
+        height: 450px;
+    }
+    
+    nav {
+        display: none; /* Garante que o nav não será ocultado em telas menores */
+    }
+    ul{ /**(representa uma lista nao ordenada de itens  )**/
+        margin-top: 30px;
+    
+    }
+    #ajuda_banner{
+        width: 100%;
+        background-image: url('./Midia/poster.jpeg');
+        background-position: center;
+        display: flex;
+        height: 100%; /* Ajusta a altura automaticamente para manter a proporção da imagem */
+        min-height: 700px; /* Define uma altura mínima para garantir visibilidade */
+        
+    }
+    #ajuda_pai{ 
+        height: auto;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+    
+    
+    }
+    
+    #tipo_ajuda_pai{
+        width: 100%;
+    }
+    
+    .tipo_ajuda_filho{
+        width: 90%;
+        display: grid;
+        grid-template-columns: 1fr;
+        row-gap: 20px;
+        column-gap: 40px;
+        justify-items: center; /* Centraliza os itens dentro da grid */
+
+    }
+    
+    .ajuda{
+        width: 95%;
+    }
+
+
+
+}

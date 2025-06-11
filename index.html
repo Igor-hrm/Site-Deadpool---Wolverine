@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Deadpool & Wolverine</title>
+    <link rel="stylesheet" href="./styles.css"> <!--  relaciona o arquivo html com um css em outro local. -->
+    <link rel="icon" href="./Midia/logosemfundo3.png" type="image/x-icon"> <!-- cria um icone para as abas-->
+</head>
+<body>
+<header><!--Barra de navegação-->
+    
+    <img id="logo" src="./Midia/logosemfundo2.png"> <!--Adiciona uma imagem na barra de navegação o (id se refere a logo) -->
+    <nav> <!--representa uma seção de páginas  que apontam para outras áreas da paginas(nova guia) -->
+        <ul> <!-- Representa uma lista de itens sem ordem (neste caso sao 'home', 'contato', 'fotos' e comentários)-->
+            <a href="./index.html"> <!--O <a> é uma âncora, linka a uma arquivo html que eu criei(página principal) -->
+            <li>Home</li> <!--É usado para representar um elemento da lista -->
+            </a>
+
+            <a href="./fale_conosco.html"> <!-- O <a> é uma âncora, linka a uma arquivo html que eu criei -->
+            <li>Fale Conosco</li> <!--É usado para representar um elemento da lista -->
+            </a>
+
+            <a href="./fotos.html"> <!--O <a> é uma âncora, linka a uma arquivo html que eu criei -->
+            <li>Fotos</li> <!--É usado para representar um elemento da lista -->
+            </a>
+
+            <a href="./comentarios.html"> <!--O <a> é uma âncora, linka a uma arquivo html que eu criei -->
+            <li>Comentários</li> <!--É usado para representar um elemento da lista --> 
+            </a>
+
+        </ul>
+    </nav>
+</header>
+
+<div id="banner"></div> <!-- O DIV é usado como um container genérico pode ser usado para agrupar elementos, neste caso foi criado um ID que será completado no arquivo CSS -->
+<div id="seetrailer"> 
+    <div class="trailertext">
+        <p>Assista ao trailer:<!-- Representa um parágrafo-->
+
+        </p>
+
+    </div>
+</div>
+<div id="trailer-container">
+    <div class="content">
+        <video controls class="trailer"> <!--Usado para incorporar um vídeo / o controls serve para colocar funções do tipo: play/pause, barra de progresso, volume, fullscrean..ect-->
+            <source src="./Midia/Deadpool&Wolverine_TeaserOficialDublado.mp4" type="video/mp4"><!-- source é usado para específicar múltiplos recursos de mídia e/ou áudio/ o src incorpora um recurso externo-->
+            Seu navegador não possui suporte para vídeos.<!-- caso o navegador nao possur suporte vai printar isso -->
+        </video>
+        <div id="sinopse">
+            <p class="description">
+                Depois de enfrentar alguns obstáculos profissionais ao passar por uma crise de meia-idade, 
+                Wade Wilson decide se aposentar oficialmente como o mercenário Deadpool e se torna vendedor de carros usados. 
+                Mas, quando seus amigos, família e o mundo inteiro estão em perigo, ele decide tirar suas 
+                katanas da aposentadoria e recruta um Wolverine relutante e cauteloso não apenas para lutar por sua 
+                sobrevivência, mas, em última análise, por seu legado.
+
+            </p>
+            <button class="button">Comprar ingresso</button><!-- cria um botão-->
+        </div>
+    </div>
+</div>
+
+<div class="actor-cards-container">
+    <div class="cards-container">
+        <div class="card banner-1">Ryan Reynolds - Deadpoll</div> 
+        <div class="card banner-2">Hugh Jackman - Wolverine</div> 
+        <div class="card banner-3">Stefan Kapičić - Colossus</div> 
+
+    </div>
+</div>
+
+<footer><!-- cria um rodapé -->
+    <img style="object-fit: contain;" id="logo" src="./Midia/logosemfundo3.png"><!--puxa uma imagem -->
+    <span>Todos os direitos reservados ©</span> <!-- neste caso para estilização-->
+    <span>Desenvolvido por: Igor H. Rocha</span>
+
+    <nav class="footer-navegation">
+        <ul class="footer-list">
+            <a href="./index.html">
+            <li>Home</li>
+            </a>
+
+            <a href="./fale_conosco.html">
+            <li>Fale Conosco</li>
+            </a>
+
+            <a href="./fotos.html">
+            <li>Fotos</li>
+            </a>
+
+            <a href="./comentarios.html">
+            <li>Comentários</li>
+            </a>
+
+        </ul>
+    </nav>
+</footer>
+
+
+</body>
+</html>

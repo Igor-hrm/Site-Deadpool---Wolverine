@@ -1,0 +1,243 @@
+@import url('https://fonts.googleapis.com/css2?family=Kdam+Thmor+Pro&display=swap');/**(importa uma fonte )**/
+
+*{  /**( O * é usado para adicionar um padrão a todo o arquivo)**/
+   margin: 0;  /**(Define a margem , por estar em um '*' define para todo o arquivo)**/
+   padding: 0; /**(Define uma   distância entre o conteúdo de um elemento e suas bordas  )**/
+   background-color: black; /**(Define uma cor de background para todo o arquivo )**/
+   list-style: none; /**(Define a propriedade da lista toda de uma vez +- isso)**/
+   text-decoration: none; /**(Define a aparência dos textos )**/
+}
+
+
+header{ /**(É o cabeçalho, pode ser usado para integrar logos, elementos de titúlos, formúlarios, etc...)**/
+    height: 120px;    /**(Define a altura de um elemento )**/
+    display: flex;    /**(Define os tipos de exibição )**/
+    justify-content: space-around; /**(Distribui espaço de formas diferentes entre os itens )**/
+    align-items: center; /**(Controla o alinhamento dos itens no eixo do bloco )**/
+    border-bottom: inset;
+    border-color:rgb(162, 19, 19);
+    border-width: 10px;
+
+}
+
+nav{/**( fornece lins por meio de uma seleção )**/
+    width: 60%;/**(Define a largura do item )**/
+    display: block;
+}
+
+ul{ /**(representa uma lista nao ordenada de itens  )**/
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+
+}
+
+li{/**(Representa uma lista ordenada de itens )**/
+    list-style: none;/**( lista as propriedades da lista )**/
+    color: aliceblue;/**(Escolhe a cor )**/
+    cursor: pointer;/**(seleciona o tipo de cursor)**/
+    font-size: 25px;/**(Escolhe o tamanho da fonte )**/
+    transition: 3s;/**( define a transição )**/
+    font-family: 'Kdam Thmor Pro', sans-serif ;/**(Define a fonte )**/
+
+}
+
+li:hover{/**(Representa uma lista ordenada de itens//// quando como o hover, faz com que apoliqe um estilo ao link quando o mouse passa por cima dele)**/
+    color: rgb(162, 19, 19);
+
+}
+
+#logo{/**()**/
+    width: 100px;
+    height: auto;
+
+}
+footer{
+    height: 230px;
+    margin-top: 100px ;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    border-style: inset;
+    border-color: rgb(255, 0, 0); 
+    border-width: 6px 0px 6px 0px;
+}
+
+span{
+    color: #fff;
+    font-family: 'Kdam Thmor Pro', sans-serif;
+    font-size: large;
+
+}
+#banner{
+    background-image: url("Midia/banner02.png");
+    background-position: 50% 50%;
+    background-size: cover;
+    display:flex;
+    justify-content: center;
+    padding: 0px;
+    margin-bottom: 10px;
+    width: auto;
+    height: 799px;
+    border-bottom:rgb(162, 19, 19);/**(Borda de baixo)**/
+    border-bottom-style: inset ;/**(Estilo da borda de baixo)**/
+    border-width: 10px;/**(Largura da borda)**/
+}
+
+.footer-navegation{
+    display: none;
+
+}
+
+.footer-list{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+/* página COMENTÁRIOS */
+
+img {
+    overflow-clip-margin: content-box;
+    overflow: clip;
+    background-size: cover;
+
+}
+
+#card_comentarios_container{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-top: 60px;
+    
+
+    
+}
+
+.comentarios_conteudo{
+    width: 90%;
+    display: grid;
+    grid-template-columns: repeat(2, 2fr);
+    row-gap: 20px;
+    column-gap: 40px;
+    
+}
+
+.comentarios_filho{
+    width: 100%;
+    height: 700px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 1s;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 30px 0px 20px 0px;
+    color: white;
+    font-size: 20px;
+    font-family: "Kdam Thmor Pro", sans-serif;
+    border-style: inset;
+    border-color: rgb(162, 19, 19);
+    background-image: url("./Midia/fundocomentario02.png");
+    background-color: transparent;
+    background-size: cover ; /* Ajusta a imagem ao contêiner sem cortar */
+    background-position: center; /* Centraliza a imagem */
+    
+}
+.comentarios_conteudo :hover{
+    transform: scale(1.02);
+    
+}
+
+.comentarios_filho p{
+    padding: 10px 20px 10px 20px;
+    background-color: transparent;
+}
+.comentarios_filho h4{
+    background-color: transparent;
+}
+.foto{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    border-style: inset;
+    border-color: rgb(162, 19, 19); 
+    border-width: 6px;
+    background-color: transparent;
+    
+}
+
+.rating{
+    background-color: transparent;
+    width: 200px;
+}
+
+
+
+/* Estilos específicos para telas menores */
+@media (max-width: 768px) {
+    .footer-navegation {
+        display: block; /* Exibe a navegação no footer em telas menores */
+    }
+    footer{
+        height: 450px;
+    }
+    
+    nav {
+        display: none; /* Garante que o nav não será ocultado em telas menores */
+    }
+    ul{ /**(representa uma lista nao ordenada de itens  )**/
+        margin-top: 30px;
+    
+    }
+    #banner{
+        width: 100%;
+        background-image: url('./Midia/poster.jpeg');
+        background-position: center;
+        display: flex;
+        height: 100%; /* Ajusta a altura automaticamente para manter a proporção da imagem */
+        min-height: 700px; /* Define uma altura mínima para garantir visibilidade */
+    }
+
+
+    #card_comentarios_container{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        margin-top: 60px;
+        
+    
+        
+    }
+    
+    .comentarios_conteudo{
+        grid-template-columns: repeat(1, 4fr);
+
+    }
+    
+    .comentarios_filho{
+
+        padding: 30px 0px 20px 0px;
+        background-size: cover ; /* Ajusta a imagem ao contêiner sem cortar */
+        background-position: center; /* Centraliza a imagem */
+        font-size: 17px;
+        
+    }
+    
+    .comentarios_filho p{
+        padding: 10px 20px 10px 20px;
+        background-color: transparent;
+
+    }
+    .foto{
+        width: 100px;
+        height: 100px;
+        
+    }
+    
+    .rating{
+        width: 200px;
+    }
+
+
+}
